@@ -619,6 +619,10 @@ select {
     display: none;
 }
 
+#title input{
+    width: 610px;
+}
+
 @media screen and (max-width: 1024px) {
 
     /* START  GENERAL STYLES */

@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog Space</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Sign-Up</title>
 </head>
-
 <body>
 
-    <section class="form__section">
-        <div class="container form__section-container">
-            <h2>Sign Up</h2>
-            <div class="alert__message error">
-                <p>This is an error message</p>
-            </div>
-            <form action="" enctype="multipart/form-data">
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
-                <input type="text" placeholder="Username">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Create Password">
-                <input type="password" placeholder="Confirm Password">
-                <div class="form__control">
-                    <label for="avatar">User Avatar</label>
-                    <input type="file" id="avatar">
-                </div>
-                <button type="submit" class="btn">Sign Up</button>
-                <small>Already have an account? <a href="signin.html">Sign In</a></small>
-            </form>
-        </div>
-    </section>
+    <div id="main">
+        <h1>Create an account </h1><br><br>
 
+        <form id="container">
+            <label for="username" style="color: white;">Username</label><br>
+            <input type="text" id="username" name="username" placeholder="  enter username"><br>
+            <span id="username-error" class="error-message"></span>
+            <br>
+            <label for="email" style="color: white;">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="   example@gmail.com"><br>
+            <span id="email-error"class="error-message"></span>
+            <br>
+            <label for="password" style="color: white;">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="  enter password"><br>
+            <img id="togglePasswd" src="./images/eye-close.svg" alt=""  style="position: relative; right: -259px;
+    top: -46px; cursor: pointer;">
+            <span id="password-error"class="error-message"></span>
+      
+            <br>
+            <label for="confirm-password" style="color: white;">Confirm Password</label><br>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="  confirm password"><br>
+            <img src="./images/eye-close.svg" alt="" id="togglePasswdConfirm" style="position: relative; right: -259px;
+    top: -46px; cursor: pointer;">
+            <span id="confirm-error"class="error-message"></span>
+      
+            <br>
+            <button type="submit" id="signin">Sign Up</button><br>
+            <span id="account-created-message" class="error-message"></span><br>
+            <span id="user-exists-message" class="error-message"></span><br>
+        </form>
+        
+    </div>
+
+    <script src="signup.js"></script>
 </body>
-
 </html>

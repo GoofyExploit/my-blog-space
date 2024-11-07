@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog Space</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Sign-in</title>
 </head>
-
 <body>
 
-    <section class="form__section">
-        <div class="container form__section-container">
-            <h2>Sign In</h2>
-            <div class="alert__message success">
-                <p>This is an success message</p>
-            </div>
-            <form action="">
-                <input type="text" placeholder="Username or Email">
-                <input type="password" placeholder="Password">
-                <button type="submit" class="btn">Sign In</button>
-                <small>Don't have an account? <a href="signup.html">Sign Up</a></small>
-            </form>
+    <form id="main">
+        <h1>Sign-in for Faster Checkout</h1>
+        <div id="container">
+            <label style="color: white;">Email</label><br>
+            <input type="text" id="email" placeholder="  example@gmail.com"><br><br>
+            <label style="color: white;">Password</label><br>
+            <input type="password" id="password" placeholder="  Enter your password"><br><br>
+            <img id="togglePasswd" src="./images/eye-close.svg" alt=""  style="position: relative; right: -259px;
+    top: -66px; cursor: pointer;">
+            <button id="login">Sign-in</button>
+            <span id="user-exists-message"></span>
         </div>
-    </section>
+       
+        <a href="signup.html" id="create-account">Create Account!</a>
+    </form>
 
+    <script src="signin.js"></script>
 </body>
 
 </html>
