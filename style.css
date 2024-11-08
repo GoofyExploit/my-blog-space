@@ -223,6 +223,8 @@ nav button {
     transition: filter 500ms ease;
 }
 
+/* made by anvit */
+
 .post__author {
     display: flex;
     gap: 1rem;
