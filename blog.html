@@ -40,10 +40,10 @@
     </nav>
 
     <section class="search__bar">
-        <form class="container search__bar-container" action="" >
+        <form class="container search__bar-container" id="searchForm" onsubmit="return false;">
             <div>
                 <i class="uil uil-search"></i>
-                <input type="search" name="" placeholder="Search">
+                <input type="search" id="searchInput" placeholder="Search" onkeyup="filterPosts()">
             </div>
             <button type="submit" class="btn">Go</button>
         </form>
@@ -57,12 +57,11 @@
                         <img src="./images/blog2.jpg" alt="">
                     </div>
                     <div class="post__info">
-                        <a href="" class="category__button">Wild Life</a>
-                        <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing
+                        <a href="" class="category__button">Fashion</a>
+                        <h3 class="post__title"><a href="post.html"> The Rise of Vintage Fashion: Why Old is the New Gold
                                 elit. Molestias, sed!</a></h3>
                         <p class="post__body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odit nesciunt ullam
-                            obcaecati!
+                            Vintage fashion has made a massive comeback in recent years. Millennials and Gen Z are embracing sustainable choices, and vintage clothing offers an eco-friendly alternative to fast fashion. But what exactly defines "vintage," and how do you spot a true gem? In this blog, we’ll dive into the allure of vintage, from the craftsmanship of older garments to the unique sense of style they offer. Plus, we’ll share tips on how to incorporate vintage pieces into a modern wardrobe seamlessly.
                         </p>
                         <div class="post__author">
                             <div class="post__author-avatar">
@@ -81,12 +80,11 @@
                         <img src="./images/blog3.jpg" alt="">
                     </div>
                     <div class="post__info">
-                        <a href="" class="category__button">Wild Life</a>
-                        <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing
+                        <a href="" class="category__button">Education</a>
+                        <h3 class="post__title"><a href="post.html">Getting Started with IoT: Building Your First Temperature-Controlled Fan
                                 elit. Molestias, sed!</a></h3>
                         <p class="post__body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odit nesciunt ullam
-                            obcaecati!
+                            The Internet of Things (IoT) is changing the world as we know it. Imagine a world where your devices can communicate and adapt to your environment. In this blog, we’ll walk you through building your first IoT project: a temperature-based fan control system. We’ll cover everything from setting up the Arduino IDE to configuring the temperature sensor and fan motor. Whether you’re a beginner or just curious about IoT, this guide will give you a hands-on experience in the exciting world of smart devices.
                         </p>
                         <div class="post__author">
                             <div class="post__author-avatar">
@@ -105,12 +103,11 @@
                         <img src="./images/blog4.jpg" alt="">
                     </div>
                     <div class="post__info">
-                        <a href="" class="category__button">Wild Life</a>
-                        <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing
+                        <a href="" class="category__button">Education</a>
+                        <h3 class="post__title"><a href="post.html">Blogging 101: Essential Tips to Create Quality Content
                                 elit. Molestias, sed!</a></h3>
                         <p class="post__body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odit nesciunt ullam
-                            obcaecati!
+                            Starting a blog can feel daunting, but creating quality content is the key to building a loyal audience. Whether you're writing about fashion, tech, or lifestyle, readers are drawn to blogs that are insightful, engaging, and well-researched. In this post, we’ll go over essential blogging tips that every beginner needs: from choosing a catchy title and finding reliable sources to mastering SEO basics. Plus, learn how to manage your content using CRUD operations with localStorage for streamlined blogging and post management.
                         </p>
                         <div class="post__author">
                             <div class="post__author-avatar">
@@ -129,12 +126,11 @@
                         <img src="./images/blog5.jpg" alt="">
                     </div>
                     <div class="post__info">
-                        <a href="" class="category__button">Wild Life</a>
-                        <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing
+                        <a href="" class="category__button">Skill</a>
+                        <h3 class="post__title"><a href="post.html">A Beginner's Guide to Bug Bounty Hunting: How to Get Started
                                 elit. Molestias, sed!</a></h3>
                         <p class="post__body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odit nesciunt ullam
-                            obcaecati!
+                            Bug bounty hunting is an exciting field where you can get paid for finding vulnerabilities in software. If you're interested in ethical hacking and cybersecurity, this could be the perfect side gig for you. This blog covers the basics of bug bounty hunting, including how to identify programs that pay for vulnerabilities, the tools you'll need, and the initial steps to get started. We’ll also share some of the common types of bugs that bug bounty hunters look for and the platforms where you can find opportunities.
                         </p>
                         <div class="post__author">
                             <div class="post__author-avatar">
@@ -153,12 +149,11 @@
                         <img src="./images/blog6.jpg" alt="">
                     </div>
                     <div class="post__info">
-                        <a href="" class="category__button">Wild Life</a>
-                        <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing
+                        <a href="" class="category__button">Tips</a>
+                        <h3 class="post__title"><a href="post.html">Balancing Work and Passion Projects: Tips for Young Professionals
                                 elit. Molestias, sed!</a></h3>
                         <p class="post__body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odit nesciunt ullam
-                            obcaecati!
+                            Finding a balance between a full-time job and side projects can be challenging but deeply rewarding. Whether you’re working on a blog, a vintage store, or a creative hobby, managing time effectively is crucial. In this blog, we’ll share practical strategies for young professionals to carve out time for their passion projects. From setting clear goals to avoiding burnout, this guide will help you stay motivated and productive without compromising your mental health or work-life balance.
                         </p>
                         <div class="post__author">
                             <div class="post__author-avatar">
@@ -177,12 +172,10 @@
                         <img src="./images/blog7.jpg" alt="">
                     </div>
                     <div class="post__info">
-                        <a href="" class="category__button">Wild Life</a>
-                        <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Molestias, sed!</a></h3>
+                        <a href="" class="category__button">Fashion</a>
+                        <h3 class="post__title"><a href="post.html">Fashion Meets Technology: How IoT is Transforming the Clothing Industry</a></h3>
                         <p class="post__body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odit nesciunt ullam
-                            obcaecati!
+                            The fashion industry is no stranger to innovation, and now with IoT, the possibilities are endless. Imagine clothes that adapt to weather conditions or accessories that sync with your smartphone. This blog explores how IoT technology is revolutionizing fashion, from smart fabrics to inventory management in stores. We’ll look at real-world applications, like temperature-responsive clothing and wearables, and discuss how these innovations could shape the future of personal style and sustainable fashion.
                         </p>
                         <div class="post__author">
                             <div class="post__author-avatar">
@@ -269,6 +262,7 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="filter.js"></script>
 </body>
 
 </html>
